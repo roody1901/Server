@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FooterComponent,
     HomeComponent,
     MenuComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

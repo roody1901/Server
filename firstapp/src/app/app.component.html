@@ -6,7 +6,9 @@
         </div>
         <div class="col-md-10">
             <!-- <app-home></app-home> -->
-            <app-dashboard></app-dashboard>
+            <!-- <app-dashboard></app-dashboard> -->
+            <app-child [parentData]="username" (myevent)="ShowData($event)"></app-child>
+            <h2>Welcome to {{brand}}</h2>
         </div>
     </div>
 </div>
