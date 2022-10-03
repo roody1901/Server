@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "f6fff55b-a241-42b8-9461-2030bd3c9a95",
+      "todo": "Pay Bills",
+      "isCompleted": false
+    },
+    {
+      "id": "18beb8aa-2dcb-49bc-b21e-00606a3f514b",
+      "todo": "Go to Gym",
+      "isCompleted": false
+    },
+    {
+      "id": "1e2c6775-8ca5-41c2-a527-f991eacbed25",
+      "todo": "Meeting with Client",
+      "isCompleted": false
+    }
+  ]
+}
