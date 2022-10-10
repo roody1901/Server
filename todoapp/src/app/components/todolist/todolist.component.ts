@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from 'src/app/models/Todo';
 import { DataService } from 'src/app/services/data.service';
 
@@ -10,9 +10,25 @@ import { DataService } from 'src/app/services/data.service';
 export class TodolistComponent implements OnInit {
 
   constructor(private service: DataService) { }
-  todos: Array<Todo> = [];
+
   ngOnInit(): void {
-    this.service.getTodos().subscribe(data => this.todos = data)
+
+  }
+  @Input()
+  todoData: any;
+
+  @Output()
+  deleteItemEvent = new EventEmitter();
+
+  @Output()
+  updateItemEvent = new EventEmitter();
+
+  deleteItem(id: any){
+    this.deleteItemEvent.emit(id);
+  }
+
+  updateItem(item: any){
+    this.updateItemEvent.emit(item);
   }
 
 }

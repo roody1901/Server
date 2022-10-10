@@ -1,19 +1,14 @@
 {
   "todos": [
     {
-      "id": "f6fff55b-a241-42b8-9461-2030bd3c9a95",
+      "id": "756226f7-53ab-4caa-8508-8b9c6707f998",
       "todo": "Pay Bills",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
-      "id": "18beb8aa-2dcb-49bc-b21e-00606a3f514b",
-      "todo": "Go to Gym",
-      "isCompleted": false
-    },
-    {
-      "id": "1e2c6775-8ca5-41c2-a527-f991eacbed25",
-      "todo": "Meeting with Client",
-      "isCompleted": false
+      "id": "44ca286e-dc21-4f4e-af96-90fa84a75504",
+      "todo": "Buy Groceries",
+      "isCompleted": true
     }
   ]
 }
