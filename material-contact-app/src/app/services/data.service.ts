@@ -30,4 +30,12 @@ export class DataService {
     return this.http.delete(`http://localhost:3000/contacts/${id}`)
   }
 
+  registerUser(user: any){
+    return this.http.post('http://localhost:9000/auth/register', user)
+  }
+
+  loginUser(cred: any){
+    return this.http.post('http://localhost:9000/auth/login', cred)
+  }
+
 }

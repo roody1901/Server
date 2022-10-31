@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from "@angular/material/card";
+import { PhoneformatPipe } from './pipes/phoneformat.pipe';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatCardModule } from "@angular/material/card";
     AddcontactComponent,
     LoginComponent,
     RegisterComponent,
-    EditcontactComponent
+    EditcontactComponent,
+    PhoneformatPipe
   ],
   imports: [
     BrowserModule,

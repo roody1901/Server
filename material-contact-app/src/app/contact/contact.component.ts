@@ -9,6 +9,7 @@ import Contact from '../models/contact';
 export class ContactComponent implements OnInit {
 
   constructor() { }
+  public currDate = new Date();
 
   @Input()
   contactData: Array<any> = [];

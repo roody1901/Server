@@ -3,10 +3,10 @@
     {
       "FirstName": "Peter",
       "LastName": "Parker",
-      "Email": "Peter@gmail.com",
-      "Age": "25",
+      "Email": "Peter@hotmail.com",
       "City": "New Delhi",
-      "Phone": "9236289",
+      "Age": "25",
+      "Phone": "9236289123",
       "id": 1
     },
     {
@@ -15,8 +15,9 @@
       "Email": "James@gmail.com",
       "Age": "30",
       "City": "Mumbai",
-      "Phone": "29836982",
+      "Phone": "9836982123",
       "id": 3
     }
   ]
 }
+
