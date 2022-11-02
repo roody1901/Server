@@ -26,16 +26,24 @@ export class DataService {
     return this.http.put(`http://localhost:3000/contacts/${id}`, contact)
   }
 
-  deleteContact(id: any){
+  deleteContact(id: any) {
     return this.http.delete(`http://localhost:3000/contacts/${id}`)
   }
 
-  registerUser(user: any){
+  registerUser(user: any) {
     return this.http.post('http://localhost:9000/auth/register', user)
   }
 
-  loginUser(cred: any){
+  loginUser(cred: any) {
     return this.http.post('http://localhost:9000/auth/login', cred)
+  }
+
+  isAuthenticated() {
+    return this.http.post('http://localhost:9000/auth/isAuthenticated', {}, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`
+      }
+    })
   }
 
 }
