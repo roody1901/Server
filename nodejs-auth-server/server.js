@@ -27,11 +27,15 @@ function verifyToken(token) {
 //Verify token middleware
 function VerifyTokenMiddleware(req, res, next) {
   if (req.headers.authorization !== undefined) {
-    if (verifyToken(req.headers.authorization.split(' ')[1]) === true) {
+    let verifyTokenResult;
+    verifyTokenResult = verifyToken(req.headers.authorization.split(' ')[1]);
+    if (verifyTokenResult instanceof Error) {
+      const status = 401
+      const message = 'Access token is invalid'
+      res.status(status).json({ status, isAuthenticated: false, message });
+      return
+    } else {
       next();
-    }
-    else {
-      res.status(401).send({ status: 401, message: "You are not authorized" });
     }
   }
   else {
